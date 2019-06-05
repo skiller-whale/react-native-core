@@ -1,0 +1,5 @@
+#! /bin/sh
+export REACT_NATIVE_PACKAGER_HOSTNAME=192.168.1.102 && \
+echo "USING AN IP ADDRESS OF "$REACT_NATIVE_PACKAGER_HOSTNAME && \
+npm install && \
+npm start
