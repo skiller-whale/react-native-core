@@ -4,9 +4,9 @@
     "start": "node start.js"
   },
   "dependencies": {
-    "expo": "^32.0.0",
-    "react": "16.5.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
+    "expo": "^34.0.1",
+    "react": "16.8.3",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-34.0.0.tar.gz",
     "react-navigation": "^3.9.0",
     "skiller-whale-sync": "^1.1.0"
   },
