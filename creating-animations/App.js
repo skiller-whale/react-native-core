@@ -9,7 +9,7 @@ const Header = ({ title }) => {
   );
 };
 
-class Task extends React.Component {
+class Item extends React.Component {
   state = {
     tilted: false
   }
@@ -31,9 +31,9 @@ class Task extends React.Component {
     }
 
     return (
-      <TouchableOpacity style={styles.taskContainer} onPress={this.toggleTilt}>
-          <Text style={[styles.taskText, extraStyle]}>
-            I'm task number {1 + this.props.number}
+      <TouchableOpacity style={styles.itemContainer} onPress={this.toggleTilt}>
+          <Text style={[styles.itemText, extraStyle]}>
+            I'm dull-looking item number {1 + this.props.number}
           </Text>
       </TouchableOpacity>
     );
@@ -61,16 +61,16 @@ export default class App extends React.Component {
   }
 
   render() {
-    const tasks = []
+    const items = []
     for(let i = 0; i < this.state.count; i++) {
-      tasks.push(<Task number={i} key={i}/>)
+      items.push(<Item number={i} key={i}/>)
     }
 
     return (
       <SafeAreaView style={styles.container}>
-        <Header title="Task List" />
-        <View style={styles.allTasks}>
-          {tasks}
+        <Header title="List of dull-looking items" />
+        <View style={styles.allItems}>
+          {items}
         </View>
         <View style={styles.buttonBar}>
           <View style={styles.wideButton}>
@@ -106,17 +106,17 @@ const styles = StyleSheet.create({
   headerText: {
     fontSize: 20
   },
-  allTasks: {
+  allItems: {
     flex: 1
   },
-  taskContainer: {
+  itemContainer: {
     flex: 1,
     borderColor: "lightgrey",
     borderWidth: 1,
     justifyContent: "center",
     alignItems: "center"
   },
-  taskText: {
+  itemText: {
     color: "white"
   },
   tiltedText: {
