@@ -3,7 +3,7 @@
     "name": "React Native Core",
     "slug": "react-native-basics",
     "privacy": "public",
-    "sdkVersion": "37.0.0",
+    "sdkVersion": "42.0.0",
     "platforms": [
       "ios",
       "android"

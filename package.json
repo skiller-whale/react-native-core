@@ -4,10 +4,10 @@
     "start": "node start.js"
   },
   "dependencies": {
-    "expo": "37.0.0",
-    "react": "16.8.3",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-37.0.0.tar.gz",
-    "react-native-gesture-handler": "^1.6.1",
+    "expo": "42.0.0",
+    "react": "16.13.1",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz",
+    "react-native-gesture-handler": "^1.10.2",
     "react-navigation": "^3.11.0",
     "react-navigation-stack": "^1.9.0",
     "skiller-whale-sync": "^1.5.0"
